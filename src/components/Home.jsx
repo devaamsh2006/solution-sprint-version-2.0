@@ -34,9 +34,7 @@ function Home() {
                 <Domain />
             </Element>
 
-            <Element name="faq">
-                <FAQ />
-            </Element>
+         
 
             <Element name="stats">
                 <StatsOfLastEvent />
@@ -49,6 +47,10 @@ function Home() {
 
             <Element name="timeline">
                 <EventTimeLine />
+            </Element>
+
+            <Element name="faq">
+                <FAQ />
             </Element>
         </div>
     );

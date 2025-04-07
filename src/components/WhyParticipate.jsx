@@ -61,7 +61,7 @@ const WhyParticipate = () => {
       {cards.map((card, i) => (
         <div
           key={i}
-          className={`rounded-2xl p-6 ${card.bg} text-white shadow-xl transition-transform hover:scale-105 duration-300`}
+          className={`rounded-2xl p-6 backdrop=blur-xl bg-transparent shadow-slate-400 text-white shadow-md transition-transform hover:scale-105 duration-300`}
         >
           <div className="w-12 h-12 mb-4 rounded-full bg-white/20 flex items-center justify-center shadow-md mx-auto">
             {card.icon}
