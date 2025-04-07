@@ -1,18 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import BrainParticles from './components/Background'
-import Home from './components/Home'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import RootLayout from './components/RootLayout';
+import Home from './components/Home';
+import RouteError from './components/RouteError';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const routerObj = createBrowserRouter([
+    {
+      path: "",
+      element: <RootLayout />,
+      errorElement: <RouteError />,
+      children: [
+        {
+          path: "",
+          element: <Home />
+        }
+      ]
+    },
+  ]);
 
-  return (
-    <>
-    <Home />
-    </>
-  )
+
+  return <RouterProvider router={routerObj} />;
 }
 
-export default App
+export default App;
