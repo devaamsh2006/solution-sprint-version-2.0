@@ -15,13 +15,13 @@ function Home() {
         <div>
             <div>
                 <h1 className="text-center text-white">
-                <div className='relative h-1/2 w-screen bg-black'>
-                <LetterGlitch
+                <div className='relative h-screen w-screen'>
+                {/* <LetterGlitch
                  glitchSpeed={70}
                 centerVignette={false}
                 outerVignette={true}
                 smooth={true}
-                /> 
+                />  */}
                 <Hero />
             </div>
             </h1>

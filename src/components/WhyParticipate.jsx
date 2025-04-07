@@ -45,37 +45,35 @@ const cards = [
 
 const WhyParticipate = () => {
     return (
-        <section className="text-white py-20 px-4"
-        style={{
-        backgroundColor: 'rgba(255, 255, 255, 0.1)', // Reduced opacity from 0.2 to 0.1
-        backdropFilter: 'blur(8px)',
-        WebkitBackdropFilter: 'blur(8px)',
-        zIndex: 10,
-        padding: '0.75rem 2rem',
-        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)' // Added subtle shadow
-    }}>
-            <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl font-bold text-purple-400 mb-4">Why Participate?</h2>
-                <p className="text-lg text-gray-300 mb-12">
-                    Unleash your potential, connect with innovators, and win exciting rewards.
-                </p>
+        <section
+  className="text-white py-20 px-4 backdrop-blur-md bg-transparent shadow-md"
+  style={{
+    zIndex: 10
+  }}
+>
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-4xl font-bold text-purple-400 mb-4">Why Participate?</h2>
+    <p className="text-lg text-gray-300 mb-12">
+      Unleash your potential, connect with innovators, and win exciting rewards.
+    </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {cards.map((card, i) => (
-                        <div
-                            key={i}
-                            className={`rounded-2xl p-6 ${card.bg} text-white shadow-xl transition-transform hover:scale-105 duration-300`}
-                        >
-                            <div className="w-12 h-12 mb-4 rounded-full bg-white/20 flex items-center justify-center shadow-md mx-auto">
-                                {card.icon}
-                            </div>
-                            <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-                            <p className="text-white/80">{card.description}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {cards.map((card, i) => (
+        <div
+          key={i}
+          className={`rounded-2xl p-6 ${card.bg} text-white shadow-xl transition-transform hover:scale-105 duration-300`}
+        >
+          <div className="w-12 h-12 mb-4 rounded-full bg-white/20 flex items-center justify-center shadow-md mx-auto">
+            {card.icon}
+          </div>
+          <h3 className="text-xl font-bold mb-2">{card.title}</h3>
+          <p className="text-white/80">{card.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
     );
 };
 
