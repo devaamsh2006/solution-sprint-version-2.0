@@ -9,7 +9,7 @@ function Home() {
     return (
         <div>
             <div>
-                <h1 className="text-center">Home</h1>
+                <h1 className="text-center text-white">Home</h1>
             </div>
             <Element name="about">
                 <About />
