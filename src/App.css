@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.content-wrapper {
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
