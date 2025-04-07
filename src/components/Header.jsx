@@ -19,6 +19,7 @@ function Header() {
             <li><Link to="about" smooth={true} duration={500} spy={true} className="nav-link text-white">About</Link></li>
             <li><Link to="domain" smooth={true} duration={500} spy={true} className="nav-link text-white">Domain</Link></li>
             <li><Link to="faq" smooth={true} duration={500} spy={true} className="nav-link text-white">FAQ</Link></li>
+            <li><Link to="rewards" smooth={true} duration={500} spy={true} className="nav-link text-white">Rewards</Link></li>
             <li><Link to="stats" smooth={true} duration={500} spy={true} className="nav-link text-white">Stats</Link></li>
             <li><Link to="timeline" smooth={true} duration={500} spy={true} className="nav-link text-white">Timeline</Link></li>
         </ul>
