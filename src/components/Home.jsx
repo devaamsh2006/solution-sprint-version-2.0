@@ -14,7 +14,17 @@ function Home() {
     return (
         <div>
             <div>
-                <h1 className="text-center text-white">Home</h1>
+                <h1 className="text-center text-white">
+                <div className='relative h-1/2 w-screen bg-black'>
+                <LetterGlitch
+                 glitchSpeed={70}
+                centerVignette={false}
+                outerVignette={true}
+                smooth={true}
+                /> 
+                <Hero />
+            </div>
+            </h1>
             </div>
             <Element name="about">
                 <About />
