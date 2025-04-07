@@ -11,7 +11,7 @@ function RootLayout() {
             <div>
                 <Background />
                 <Header></Header>
-                <div style={{ minHeight: '90vh', paddingTop: '80px' }}>
+                <div>
                     <Outlet></Outlet>
                 </div>
                 <Footer></Footer>
