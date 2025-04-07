@@ -45,7 +45,15 @@ const cards = [
 
 const WhyParticipate = () => {
     return (
-        <section className="bg-gradient-to-br from-[#0f051d] to-[#010101] text-white py-20 px-4">
+        <section className="text-white py-20 px-4"
+        style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.1)', // Reduced opacity from 0.2 to 0.1
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
+        zIndex: 10,
+        padding: '0.75rem 2rem',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)' // Added subtle shadow
+    }}>
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-4xl font-bold text-purple-400 mb-4">Why Participate?</h2>
                 <p className="text-lg text-gray-300 mb-12">

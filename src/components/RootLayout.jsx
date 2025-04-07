@@ -3,7 +3,6 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Background from './Background.jsx';
 import { Outlet } from 'react-router-dom';
-import '../Styles/RootLayout.css';
 
 function RootLayout() {
     return (

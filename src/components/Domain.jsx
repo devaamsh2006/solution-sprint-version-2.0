@@ -25,7 +25,15 @@ function Domain() {
         {domains.map((domain, index) => (
           <div
             key={index}
-            className="bg-white/15 backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg w-full max-w-sm transform transition-transform hover:scale-105"
+            className="backdrop-blur-md border border-white/10 p-8 rounded-2xl shadow-lg w-full max-w-sm transform transition-transform hover:scale-105"
+            style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.1)', // Reduced opacity from 0.2 to 0.1
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
+        zIndex: 10,
+        padding: '0.75rem 2rem',
+        boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)' // Added subtle shadow
+    }}
           >
             <div className="text-4xl mb-4">{domain.icon}</div>
             <h2 className="text-xl font-semibold">{domain.title}</h2>
