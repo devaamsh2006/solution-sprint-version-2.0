@@ -8,6 +8,7 @@ import FAQ from './FAQ';
 import StatsOfLastEvent from './StatsOfLastEvent';
 import EventTimeLine from './EventTimeLine';
 import Rewards from './Rewards';
+import WhyParticipate from './WhyParticipate';
 
 function Home() {
     return (
@@ -42,6 +43,7 @@ function Home() {
             </Element>
 
             <Element name="rewards">
+                <WhyParticipate />
                 <Rewards />
             </Element>
 

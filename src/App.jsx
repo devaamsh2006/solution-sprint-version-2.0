@@ -4,7 +4,6 @@ import RootLayout from './components/RootLayout';
 import Home from './components/Home';
 import RouteError from './components/RouteError';
 
-
 function App() {
   const routerObj = createBrowserRouter([
     {
@@ -22,6 +21,7 @@ function App() {
 
 
   return <RouterProvider router={routerObj} />;
+
 
 }
 
