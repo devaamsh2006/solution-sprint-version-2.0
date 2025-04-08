@@ -17,22 +17,6 @@ function App() {
         {
           index: true,
           element: <Home />
-        },
-        {
-          path: 'about',
-          element: <About />
-        },
-        {
-          path: 'domain',
-          element: <Domain />
-        },
-        {
-          path: 'faq',
-          element: <FAQ />
-        },
-        {
-          path: 'stats',
-          element: <StatsOfLastEvent />
         }
       ]
     }

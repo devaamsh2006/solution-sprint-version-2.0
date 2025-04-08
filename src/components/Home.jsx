@@ -28,32 +28,33 @@ function Home() {
             </h1>
             </div>
             </Element>
-            <Element name="about">
+            <Element name="about" id="about">
                 <About />
             </Element>
 
-            <Element name="domain">
+            <Element name="domain" id="domain">
                 <Domain />
             </Element>
 
-         
+            <Element name="faq" id="faq">
+                <FAQ />
+            </Element>
 
-            <Element name="stats">
+            <Element name="stats" id="stats">
                 <StatsOfLastEvent />
             </Element>
 
-            <Element name="rewards">
+
+            <Element name="rewards" id="rewards">
                 <WhyParticipate />
                 {/* <Rewards /> */}
             </Element>
 
-            <Element name="timeline">
+            <Element name="timeline" id="timeline">
                 <EventTimeLine />
             </Element>
 
-            <Element name="faq">
-                <FAQ />
-            </Element>
+            
         </div>
     );
 }
