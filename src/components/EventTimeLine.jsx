@@ -47,11 +47,11 @@ const EventTimeLine = () => {
 
       <div className="flex items-center justify-center">
         <div className="relative w-full max-w-3xl backdrop-blur-md bg-transparent border border-white/10 p-6 rounded-2xl shadow-lg">
-          <div className="absolute left-5 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 rounded"></div>
+          <div className="absolute left-14 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 rounded"></div>
           <ol className="relative space-y-10">
             {timelineData.map((event, index) => (
               <li className="relative ps-16 animate-fade-in text-left" key={index}>
-                <div className="absolute left-4 top-1 w-4 h-4 bg-white border-2 border-gray-300 rounded-full z-10 shadow-md"></div>
+                <div className="absolute left-6 top-1 w-5 h-4 bg-white border-2 border-gray-300 rounded-full z-10 shadow-md"></div>
                 <time className="mb-1 text-sm font-medium text-gray-300">
                   {event.date}
                 </time>
