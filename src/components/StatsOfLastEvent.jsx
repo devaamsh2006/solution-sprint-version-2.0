@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const images = [
   '/images/image1.jpg',
@@ -8,16 +8,6 @@ const images = [
 ];
 
 function StatsOfLastEvent() {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageClick = (src) => {
-    setSelectedImage(src);
-  };
-
-  const closeModal = () => {
-    setSelectedImage(null);
-  };
-
   return (
     <div className="min-h-screen px-8 py-16 text-white text-center">
       <div className="p-3 backdrop-blur-md mb-12 bg-transparent">
@@ -28,37 +18,25 @@ function StatsOfLastEvent() {
           tackling diverse problem statements across various domains, demonstrating their innovative
           ideas and solutions.
         </p>
+
+        <div className="mt-6 text-md font-semibold">
+          <p>📌 1st Round: <strong>100+ teams</strong> (350+ participants)</p>
+          <p>🏆 Final Round: <strong>15 teams</strong> shortlisted</p>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
         {images.map((src, index) => (
-          <div
-            key={index}
-            className="w-80 h-52 rounded-2xl overflow-hidden shadow-lg backdrop-blur-md border border-white/10 bg-transparent cursor-pointer"
-            onClick={() => handleImageClick(src)}
-          >
+          <div key={index} className="w-80 h-52 rounded-2xl overflow-hidden shadow-lg backdrop-blur-md border border-white/10 bg-transparent">
             <img
               src={src}
               alt={`Event ${index + 1}`}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+              onClick={() => window.open(src, '_blank')}
             />
           </div>
         ))}
       </div>
-
-      {/* Fullscreen Modal */}
-      {selectedImage && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50"
-          onClick={closeModal}
-        >
-          <img
-            src={selectedImage}
-            alt="Enlarged Event"
-            className="max-w-full max-h-full object-contain rounded-xl shadow-lg"
-          />
-        </div>
-      )}
     </div>
   );
 }
