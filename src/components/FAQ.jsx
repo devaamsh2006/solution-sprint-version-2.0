@@ -38,8 +38,7 @@ function FAQ() {
     setOpenIndex(openIndex === index ? null : index)
   }
     return (
-        <div className='backdrop-blur-xl bg-transparent py-12 px-4 sm:px-8 md:px-16 min-h-screen'>
-      {/* Heading */}
+        <div className='backdrop-blur-xl bg-transparent py-12 px-4 sm:px-8 md:px-16'>
       <div className="text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white">
           Frequently Asked Questions
@@ -48,8 +47,6 @@ function FAQ() {
           Got questions? We've got answers.
         </p>
       </div>
-
-      {/* FAQ Grid */}
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto'>
         {faqData.map((faq, index) => (
           <div

@@ -8,7 +8,7 @@ const timelineData = [
     description:
       "Venue: Online. Participants will choose a problem statement and submit a well-structured PowerPoint presentation outlining their proposed solution.",
     link: "#",
-    showLink: true,
+    showLink: false,
   },
   {
     date: "16th, 17th & 18th April 2025",
@@ -16,7 +16,7 @@ const timelineData = [
     description:
       "Venue: Online. Shortlisted teams from Round 1 will present their ideas to an expert jury panel in an online session.",
     link: "#",
-    showLink: true,
+    showLink: false,
   },
   {
     date: "20th April 2025",
@@ -24,7 +24,7 @@ const timelineData = [
     description:
       "Venue: Online. A guided session to familiarize participants with Figma for UI design and provide essential guidelines for creating impactful presentations.",
     link: "#",
-    showLink: true,
+    showLink: false,
   },
   {
     date: "26th April 2025",
@@ -32,7 +32,7 @@ const timelineData = [
     description:
       "Venue: VNRVJIET (Offline). Finalists will present their solutions in person to the jury at VNRVJIET campus.",
     link: "#",
-    showLink: true,
+    showLink: false,
   },
 ];
 
