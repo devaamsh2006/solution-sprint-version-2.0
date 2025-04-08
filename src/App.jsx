@@ -1,22 +1,26 @@
-import { useState } from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RootLayout from './components/RootLayout';
 import Home from './components/Home';
+import StatsOfLastEvent from './components/StatsOfLastEvent';
 import RouteError from './components/RouteError';
 
 function App() {
   const routerObj = createBrowserRouter([
     {
-      path: "",
+      path: '',
       element: <RootLayout />,
       errorElement: <RouteError />,
       children: [
         {
-          path: "",
+          path: '',
           element: <Home />
+        },
+        {
+          path: 'stats',
+          element: <StatsOfLastEvent />
         }
       ]
-    },
+    }
   ]);
 
   return <RouterProvider router={routerObj} />;
