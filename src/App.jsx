@@ -19,10 +19,7 @@ function App() {
     },
   ]);
 
-
   return <RouterProvider router={routerObj} />;
-
-
 }
 
-export default App;
+export default App
