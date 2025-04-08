@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+    const location = useLocation();
+    
     return (
         <nav className="fixed w-full z-50 backdrop-blur-xl shadow-md px-8 py-3">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -9,7 +11,7 @@ function Header() {
                     <li>
                         <Link
                             to="/"
-                            className="cursor-pointer hover:text-purple-400 transition"
+                            className={`cursor-pointer transition ${location.pathname === '/' ? 'text-purple-400' : 'hover:text-purple-400'}`}
                         >
                             Home
                         </Link>
@@ -17,7 +19,7 @@ function Header() {
                     <li>
                         <Link
                             to="/about"
-                            className="cursor-pointer hover:text-purple-400 transition"
+                            className={`cursor-pointer transition ${location.pathname === '/about' ? 'text-purple-400' : 'hover:text-purple-400'}`}
                         >
                             About
                         </Link>
@@ -25,7 +27,7 @@ function Header() {
                     <li>
                         <Link
                             to="/domain"
-                            className="cursor-pointer hover:text-purple-400 transition"
+                            className={`cursor-pointer transition ${location.pathname === '/domain' ? 'text-purple-400' : 'hover:text-purple-400'}`}
                         >
                             Domain
                         </Link>
@@ -33,7 +35,7 @@ function Header() {
                     <li>
                         <Link
                             to="/faq"
-                            className="cursor-pointer hover:text-purple-400 transition"
+                            className={`cursor-pointer transition ${location.pathname === '/faq' ? 'text-purple-400' : 'hover:text-purple-400'}`}
                         >
                             FAQ
                         </Link>
@@ -41,7 +43,7 @@ function Header() {
                     <li>
                         <Link
                             to="/stats"
-                            className="cursor-pointer hover:text-purple-400 transition"
+                            className={`cursor-pointer transition ${location.pathname === '/stats' ? 'text-purple-400' : 'hover:text-purple-400'}`}
                         >
                             Stats
                         </Link>
