@@ -40,7 +40,7 @@ const EventTimeLine = () => {
   return (
     <div className="min-h-screen px-6 py-16 text-white text-center">
       <div className="p-3 backdrop-blur-md mb-12 bg-transparent">
-        <h1 className="text-4xl font-bold text-shadow-sm bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold text-shadow-sm text-white">
           Event Timeline
         </h1>
       </div>

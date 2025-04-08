@@ -6,11 +6,11 @@ import { RxQuestionMarkCircled } from "react-icons/rx";
 const faqData = [
     {
       question: "What is Solution Sprint?",
-      answer: "Solution Sprint is a 36-hour hackathon where participants build tech-based solutions to real-world problems."
+      answer: "Solution Sprint is a ideathon where participants build tech-based solutions to real-world problems."
     },
     {
       question: "Who can participate?",
-      answer: "Any college student with a passion for building and innovating is welcome to participate."
+      answer: "Any college first year student with a passion for building and innovating is welcome to participate."
     },
     {
       question: "Is it a team event?",
@@ -18,7 +18,7 @@ const faqData = [
     },
     {
       question: "What are the prizes?",
-      answer: "Winners will receive cash prizes, goodies, and internship opportunities with our partners."
+      answer: "Winners will receive cash prizes, goodies with our partners."
     },
     {
       question: "Where will the event be held?",
@@ -26,7 +26,7 @@ const faqData = [
     },
     {
       question: "Still have questions?",
-      answer: "Reach out to us at contact@namespacecomm.in"
+      answer: "Reach out to us at iste@vnrvjiet.in"
     }
   ]
 
