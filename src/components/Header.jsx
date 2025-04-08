@@ -1,17 +1,22 @@
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <nav className="fixed w-full z-50 backdrop-blur-xl shadow-md px-8 py-3">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
-                <h4 className="text-xl font-bold text-white">Solution Sprint 2.0</h4>
+                <Link to="/" className="text-xl font-bold text-white">Solution Sprint 2.0</Link>
                 <ul className="hidden md:flex gap-6 text-white text-sm font-medium">
                     <li>
                         <Link
-                            to="about"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
+                            to="/"
+                            className="cursor-pointer hover:text-purple-400 transition"
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/about"
                             className="cursor-pointer hover:text-purple-400 transition"
                         >
                             About
@@ -19,10 +24,7 @@ function Header() {
                     </li>
                     <li>
                         <Link
-                            to="domain"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
+                            to="/domain"
                             className="cursor-pointer hover:text-purple-400 transition"
                         >
                             Domain
@@ -30,10 +32,7 @@ function Header() {
                     </li>
                     <li>
                         <Link
-                            to="faq"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
+                            to="/faq"
                             className="cursor-pointer hover:text-purple-400 transition"
                         >
                             FAQ
@@ -41,35 +40,10 @@ function Header() {
                     </li>
                     <li>
                         <Link
-                            to="rewards"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            className="cursor-pointer hover:text-purple-400 transition"
-                        >
-                            Rewards
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="stats"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
+                            to="/stats"
                             className="cursor-pointer hover:text-purple-400 transition"
                         >
                             Stats
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="timeline"
-                            smooth={true}
-                            duration={500}
-                            spy={true}
-                            className="cursor-pointer hover:text-purple-400 transition"
-                        >
-                            Timeline
                         </Link>
                     </li>
                 </ul>

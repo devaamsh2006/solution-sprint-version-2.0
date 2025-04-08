@@ -13,6 +13,7 @@ import WhyParticipate from './WhyParticipate';
 function Home() {
     return (
         <div>
+            <Element name="home">
             <div>
                 <h1 className="text-center text-white">
                 <div className='relative h-screen w-screen'>
@@ -26,6 +27,7 @@ function Home() {
             </div>
             </h1>
             </div>
+            </Element>
             <Element name="about">
                 <About />
             </Element>
@@ -42,7 +44,7 @@ function Home() {
 
             <Element name="rewards">
                 <WhyParticipate />
-                <Rewards />
+                {/* <Rewards /> */}
             </Element>
 
             <Element name="timeline">

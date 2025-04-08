@@ -52,7 +52,7 @@ const WhyParticipate = () => {
   }}
 >
   <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-4xl font-bold text-purple-400 mb-4">Why Participate?</h2>
+    <h2 className="text-4xl font-bold text-white mb-4">Why Participate?</h2>
     <p className="text-lg text-gray-300 mb-12">
       Unleash your potential, connect with innovators, and win exciting rewards.
     </p>

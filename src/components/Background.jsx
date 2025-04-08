@@ -62,7 +62,7 @@ export default function BrainParticles() {
                         },
                     },
                     opacity: {
-                        value: 0.9,
+                        value: 0.4,
                     },
                 },
             }}
