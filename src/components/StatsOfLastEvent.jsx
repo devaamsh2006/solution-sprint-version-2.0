@@ -11,9 +11,9 @@ function StatsOfLastEvent() {
   return (
     <div className="min-h-screen px-8 py-16 text-white text-center">
       <div className="p-3 backdrop-blur-md mb-12 bg-transparent">
-        <h1 className="text-4xl font-bold text-shadow-sm">Last Sprint</h1>
+        <h1 className="text-4xl font-bold text-shadow-sm">Solution Sprint 2k24 Highlights</h1>
         <p className="mt-4 text-lg max-w-3xl mx-auto">
-          <strong>ISTE_VNRVJIET</strong> Team ISTE recently organized <strong>"Solution Sprint"</strong>,
+           Team ISTE organized <strong>"Solution Sprint"</strong>,
           an exhilarating challenge that empowered first-year students to showcase their extraordinary creativity and razor-sharp problem-solving abilities. Participants tackled diverse real-world challenges across multiple domains, demonstrating their groundbreaking ideas and ingenious solutions that left judges thoroughly impressed.
         </p>
 
