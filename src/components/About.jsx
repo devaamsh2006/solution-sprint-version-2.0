@@ -20,7 +20,7 @@ const About = () => {
         <div className="card animate-zoom-in">
           <img src={round1} alt="Round 1" />
           <div className="card-info">
-            <h3>Round 1: PPT Preparation</h3>
+            <h3>Sprint 1: PPT Presentation</h3>
             <p>Participants prepare a PPT online explaining their solution idea and approach.</p>
           </div>
         </div>
@@ -28,7 +28,7 @@ const About = () => {
         <div className="card animate-zoom-in delay-200">
           <img src={round2} alt="Round 2" />
           <div className="card-info">
-            <h3>Round 2: Online Presentation</h3>
+            <h3>Sprint 2: Online Presentation</h3>
             <p>Teams present their ideas over Google Meet to a panel of judges.</p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const About = () => {
         <div className="card animate-zoom-in delay-400">
           <img src={round3} alt="Round 3" />
           <div className="card-info">
-            <h3>Round 3: Offline Prototype</h3>
+            <h3>Sprint 3: Final Evaluation</h3>
             <p>At VNRVJIET campus, finalists showcase a working prototype using Figma or development tools.</p>
           </div>
         </div>

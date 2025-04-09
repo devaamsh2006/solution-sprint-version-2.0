@@ -18,7 +18,7 @@ const faqData = [
     },
     {
       question: "What are the prizes?",
-      answer: "Winners will receive cash prizes, goodies with our partners."
+      answer: "Winners will receive exciting cash prizes and finalists will receive goodies and much more!"
     },
     {
       question: "Where will the event be held?",
@@ -26,7 +26,7 @@ const faqData = [
     },
     {
       question: "Still have questions?",
-      answer: "Reach out to us at iste@vnrvjiet.in"
+      answer: "Reach out to us at istevnr@gmail.com"
     }
   ]
 
