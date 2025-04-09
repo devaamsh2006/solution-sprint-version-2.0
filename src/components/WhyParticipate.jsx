@@ -7,7 +7,7 @@ import { HiOutlineLightBulb } from "react-icons/hi";
 const cards = [
     {
         title: 'Huge Cash Prizes',
-        description: 'Win massive rewards worth ₹5 Lakh across multiple categories.',
+        description: 'Win massive rewards across multiple categories.',
         icon: <FaRupeeSign size={24} />,
         bg: 'bg-green-500',
     },
@@ -31,7 +31,7 @@ const cards = [
     },
     {
         title: 'Learn from Mentors',
-        description: 'Get guidance from industry experts and seasoned professionals.',
+        description: 'Mentors will guide teams to refine ideas and focus on real-world impact.',
         icon: <HiOutlineLightBulb size={24} />,
         bg: 'bg-pink-500',
     },

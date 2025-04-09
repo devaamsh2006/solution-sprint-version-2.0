@@ -11,7 +11,7 @@ const Hero = () => {
         delay={150}
         animateBy="words"
         direction="top"
-        className="text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-6 md:mb-8 font-bold text-white heading text-center"
+        className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6 md:mb-8 font-bold text-white heading text-center"
       />
 
       <BlurText
@@ -19,7 +19,7 @@ const Hero = () => {
         delay={300}
         animateBy="words"
         direction="top"
-        className="text-lg sm:text-md mb-4 sm:mb-6 md:mb-8 text-white heading text-center"
+        className="text-xs sm:text-lg mb-4 sm:mb-6 md:mb-8 text-white heading text-center"
       />
 
       <a href='https://unstop.com/o/fvwXqnL?utm_medium=Share&utm_source=shortUrl' className='opacity-1 animate-bounce p-2 sm:p-3 rounded-full bg-gradient-to-r from-green-400 via-teal-400 to-blue-500 text-sm sm:text-base font-medium hover:scale-105 transition-transform'>
