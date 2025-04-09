@@ -20,7 +20,7 @@ const About = () => {
         <div className="card animate-zoom-in">
           <img src={round1} alt="Round 1" />
           <div className="card-info">
-            <h3>Sprint 1: PPT Presentation</h3>
+            <h3>Sprint 1: PPT Submission</h3>
             <p>Participants prepare a PPT online explaining their solution idea and approach.</p>
           </div>
         </div>
